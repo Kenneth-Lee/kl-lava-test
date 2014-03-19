@@ -14,4 +14,6 @@ metadata:
 run:
     steps:
         - 'dd if=/dev/zeron of=/dev/null count=10000'
+        - 'pwd'
+        - 'ls'
 

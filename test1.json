@@ -1,0 +1,31 @@
+{
+    "actions": [
+        {
+            "command": "deploy_linaro_kernel",
+            "parameters": {
+                "bootloadertype": "uefi",
+                "dtb": "http://community.validation.linaro.org/images/d01/.text",
+                "firmware": "http://community.validation.linaro.org/images/d01/.monitor",
+                "kernel": "http://community.validation.linaro.org/images/d01/.kernel",
+                "nfsrootfs": "http://releases.linaro.org/14.01/ubuntu/saucy-images/server/linaro-saucy-server-20140126-627.tar.gz",
+                "ramdisk": "http://community.validation.linaro.org/images/d01/.filesystem",
+                "target_type": "ubuntu"
+            }
+        },
+        {
+            "command": "lava_test_shell",
+            "parameters": {
+                "testdef_repos": [
+                    {
+                        "git-repo": "https://github.com/Kenneth-Lee/kl-lava-test.git"
+                        "testdef": "basic-test.yaml"
+                    }
+                ]
+            }
+        }
+    ],
+    "device_type": "lhg-d01",
+    "job_name": "d01-test1",
+    "logging_level": "DEBUG",
+    "timeout": 18000
+}
