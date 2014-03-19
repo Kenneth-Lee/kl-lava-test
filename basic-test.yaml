@@ -18,8 +18,6 @@ metadata:
 install:
     git-repos:
         - 'https://github.com/Kenneth-Lee/kl-lava-test.git'
-    deps:
-        - 'build-essential'
 
 run:
     steps:
