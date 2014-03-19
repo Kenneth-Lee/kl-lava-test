@@ -9,9 +9,9 @@ metadata:
         - ubuntu
     devices:
         - lhg-d01
-	- panda
-	- panda-es
-	- ardale
+        - panda
+        - panda-es
+        - ardale
     environment:
         - lava-test-shell
 
@@ -25,6 +25,6 @@ run:
     steps:
         - echo "test1:" "pass"
         - echo "test2:" "fail"
-	- 'chmod +x test3.sh'
-	- './test3.sh'
+        - 'chmod +x test3.sh'
+        - './test3.sh'
 
