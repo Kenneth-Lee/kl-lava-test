@@ -17,7 +17,7 @@
             "parameters": {
                 "testdef_repos": [
                     {
-                        "git-repo": "https://github.com/Kenneth-Lee/kl-lava-test.git"
+                        "git-repo": "https://github.com/Kenneth-Lee/kl-lava-test.git",
                         "testdef": "basic-test.yaml"
                     }
                 ]
