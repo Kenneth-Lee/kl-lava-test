@@ -1,0 +1,17 @@
+metadata:
+    name: basic-test
+    version: "1.0"
+    format: "Lava-Test-Shell Test Definition 1.0"
+    description: "do some basic test"
+    maintainer:
+        - nek.in.cn@gmail.com
+    os:
+        - ubuntu
+    devices:
+        - lhg-d01
+    environment:
+        - lava-test-shell
+run:
+    steps:
+        - 'dd if=/dev/zeron of=/dev/null count=10000'
+
